@@ -18,6 +18,9 @@ defmodule CicadaWeb.Router do
     pipe_through :browser
 
     get "/", PageController, :index
+    get "/health", PageController, :health
+    get "/now", PageController, :now
+    get "/calc", PageController, :calc
   end
 
   # Other scopes may use custom stacks.
