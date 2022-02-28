@@ -1,0 +1,6 @@
+<div>
+    <% now = :calendar.local_time() |> NaiveDateTime.from_erl! |> NaiveDateTime.to_string %>
+    <div style="font-weight: bold">
+        res_id: <%=@id %> Current time is <%= now %>
+    </div>
+</div>
