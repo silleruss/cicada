@@ -18,8 +18,18 @@ defmodule CicadaWeb.PageController do
     sumValue = String.to_integer(valueA) + String.to_integer(valueB)
     json conn, %{result: :ok, sum: sumValue}
   end
-
-  def calc(conn,_param) do
+  def calc(conn, _param) do
     json conn, %{result: :error}
   end
+
+  def res(conn, %{"id" => id}) do
+    render(conn, "res.html", [id: id])
+  end
+
+  def greeting(conn, %{"name" => name}) do
+    conn
+      |> assign(:name, name)
+      |> render("greeting.html")
+  end
+
 end

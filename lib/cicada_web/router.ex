@@ -21,6 +21,10 @@ defmodule CicadaWeb.Router do
     get "/health", PageController, :health
     get "/now", PageController, :now
     get "/calc", PageController, :calc
+
+    get "/res", PageController, :res
+
+    get "/greeting", PageController, :greeting
   end
 
   # Other scopes may use custom stacks.
