@@ -2,11 +2,15 @@ defmodule CicadaWeb.PageController do
   use CicadaWeb, :controller
 
   def index(conn, _params) do
-    render(conn, "index.html")
+    conn
+      |> Plug.Conn.put_session("session", "test_value")
+      |> render("index.html")
   end
 
   def health(conn, _params) do
-    render(conn, "health.html")
+    conn
+      # |> Plug.Conn.get_session(:test_value)
+      |> render("health.html")
   end
 
   def now(conn, _params) do
