@@ -21,6 +21,7 @@ defmodule Cicada.Auth.User do
     |> put_password_hash()
   end
 
+  # TODO: user set from database
   defp put_password_hash(
          %Ecto.Changeset{
            valid?: true,
