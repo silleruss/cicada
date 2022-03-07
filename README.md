@@ -17,3 +17,18 @@ Ready to run in production? Please [check our deployment guides](https://hexdocs
   * Docs: https://hexdocs.pm/phoenix
   * Forum: https://elixirforum.com/c/phoenix-forum
   * Source: https://github.com/phoenixframework/phoenix
+
+## Goals
+### Matching 
+1. Database and entities
+   - TODO
+2. Default endpoints
+   - TODO
+3. Login and Auth
+   - TODO
+4. Matching function
+   - TODO
+5. WebSocket chat
+   - TODO
+6. Push Notification
+   - TODO
