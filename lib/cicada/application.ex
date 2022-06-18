@@ -9,7 +9,7 @@ defmodule Cicada.Application do
   def start(_type, _args) do
     children = [
       # Start the Ecto repository
-      # Cicada.Repo,
+      Cicada.Repo,
       # Start the Telemetry supervisor
       CicadaWeb.Telemetry,
       # Start the PubSub system
