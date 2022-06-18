@@ -25,6 +25,8 @@ defmodule CicadaWeb.Router do
     get "/res", PageController, :res
 
     get "/greeting", PageController, :greeting
+
+    get "/users", UserController
   end
 
   # Other scopes may use custom stacks.
